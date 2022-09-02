@@ -10,13 +10,13 @@ se3 = LieSE3();
 so3 = LieSO3();
 
 if seq>9
-    fName = strcat('poses/', int2str(seq), '.txt');
-    time = importdata(strcat('sequences/', int2str(seq) , '/times.txt'));
-    folder = strcat('sequences/', int2str(seq) , '/');
+    fName = strcat('../input/kitti-odometry/poses/', int2str(seq), '.txt');
+    time = importdata(strcat('../input/kitti-odometry/sequences/', int2str(seq) , '/times.txt'));
+    folder = strcat('../input/kitti-odometry/sequences/', int2str(seq) , '/');
 else
-    fName = strcat('poses/0', int2str(seq), '.txt');
-    time = importdata(strcat('sequences/0', int2str(seq) , '/times.txt'));
-    folder = strcat('sequences/0', int2str(seq) , '/');
+    fName = strcat('../input/kitti-odometry/poses/0', int2str(seq), '.txt');
+    time = importdata(strcat('../input/kitti-odometry/sequences/0', int2str(seq) , '/times.txt'));
+    folder = strcat('../input/kitti-odometry/sequences/0', int2str(seq) , '/');
 end
 
 data = importdata(fName);
